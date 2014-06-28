@@ -14,4 +14,4 @@ Arduino ESC controller- maps a pot throttle to a servo output.
  - This code could kill you if you use it for something big, fast, heavy, or some combination.
    - I take absolutely no responsibility for your use.
    - The code is provided *as is* with no claims of fitness
- - Floating pins are not handled in software yet! You **NEED** a pulldown resistor.
+ - Floating pins are not handled in software! You **NEED** a pulldown resistor.
