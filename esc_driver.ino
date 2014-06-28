@@ -3,15 +3,11 @@
 boolean debug   = false;
 
 Servo ESC;  // create servo object to control the ESC
-            // a maximum of eight servo objects can be created
 
 int throttle_pin = 0;
 int esc_pin      = 2;
 
-int throttle_pos = 0;
-
-
-int pos         = 0;    // variable to store the servo position (don't start at zero)
+int pos         = 0;
 int throttle    = 0;
 
 int output_min  = 35;
@@ -56,7 +52,6 @@ int normalize_throttle(int throttle_val, int last_throttle) {
   // Change throttle
   if (throttle_val > last_throttle) {
     throttle_val = last_throttle + 2;
-
   }
 
   if (throttle_val < last_throttle) {
